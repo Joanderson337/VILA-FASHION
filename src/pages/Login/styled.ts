@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import Colors from '../../styles/theme'
 
 export const LoginContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,6 +20,9 @@ export const LoginContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: 450px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 export const LoginSubtitle = styled.p`
@@ -36,7 +39,6 @@ export const LoginSubtitle = styled.p`
 export const LoginInputContainer = styled.div`
   width: 100%;
   margin-bottom: 20px;
-
   p:nth-child(1) {
     font-weight: 600;
     margin-bottom: 5px;

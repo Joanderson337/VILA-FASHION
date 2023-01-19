@@ -1,8 +1,7 @@
 import styled from 'styled-components'
 import Colors from '../../styles/theme'
-
 export const SignUpContainer = styled.div`
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +23,9 @@ export const SignUpContent = styled.div`
   flex-direction: column;
   align-items: center;
   width: 450px;
+  @media (max-width: 768px) {
+    width: 90%;
+  }
 `
 
 export const SignUpInputContainer = styled.div`
