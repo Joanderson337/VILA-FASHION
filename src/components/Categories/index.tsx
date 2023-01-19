@@ -4,7 +4,7 @@ import { useAppSelector } from '../../hooks/redux.hooks'
 import { fetchCategories } from '../../store/reducers/category/category.actions'
 import { CategoryItem } from '../CategoryItem'
 import { Loading } from '../Loading'
-import { ContainerCategories, ContentCategories } from './styled'
+import { CategoriesContainer, CategoriesContent } from './styled'
 
 export const Categories = () => {
   const { isLoading, categories } = useAppSelector(
@@ -18,15 +18,15 @@ export const Categories = () => {
   }, [])
 
   return (
-    <ContainerCategories>
+    <CategoriesContainer>
       {isLoading && <Loading />}
-      <ContentCategories>
+      <CategoriesContent>
         {categories.map((category) => (
           <div key={category.id}>
             <CategoryItem category={category} />
           </div>
         ))}
-      </ContentCategories>
-    </ContainerCategories>
+      </CategoriesContent>
+    </CategoriesContainer>
   )
 }
