@@ -40,9 +40,15 @@ export const CartContent = styled.div`
   }
 `
 export const CartTitle = styled.p`
+  display: flex;
+  gap: 1rem;
   font-size: 1.325rem;
   font-weight: 600;
   margin-bottom: 15px;
+
+    > button {
+      background-color: transparent;
+    }
 `
 export const CartTotal = styled.p`
   font-weight: 600;

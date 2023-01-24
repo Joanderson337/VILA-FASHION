@@ -17,7 +17,7 @@ export const HeaderContainer = styled.div`
 
 export const HeaderTitle = styled.h2`
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   &:hover {
     cursor: pointer;
   }
@@ -38,7 +38,7 @@ export const HeaderItems = styled.div`
 
 export const HeaderItem = styled.div`
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   &:nth-child(1),

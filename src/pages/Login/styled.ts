@@ -6,6 +6,7 @@ export const LoginContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 40px;
 `
 
 export const LoginHeadline = styled.p`

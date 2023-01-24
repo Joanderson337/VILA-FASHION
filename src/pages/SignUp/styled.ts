@@ -1,10 +1,12 @@
 import styled from 'styled-components'
 import Colors from '../../styles/theme'
+
 export const SignUpContainer = styled.div`
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 40px 0 40px 0;
 `
 
 export const SignUpHeadline = styled.p`
