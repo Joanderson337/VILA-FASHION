@@ -1,5 +1,5 @@
 import { FunctionComponent } from 'react'
-import { BsCartCheck } from 'react-icons/bs'
+import { BsCartCheck, BsChevronLeft } from 'react-icons/bs'
 
 import { useNavigate } from 'react-router-dom'
 
@@ -41,7 +41,10 @@ export const Cart: FunctionComponent = () => {
     <CartContainer isVisible={isVisible}>
       <CartEscapeArea onClick={handleEscapeAreaClick} />
       <CartContent>
-        <CartTitle>Seu Carrinho</CartTitle>
+        <CartTitle>
+          <button onClick={handleEscapeAreaClick}><BsChevronLeft /></button>
+            Seu Carrinho
+        </CartTitle>
 
         {products.map((product) => (
           <CartItem key={product.id} product={product} />
