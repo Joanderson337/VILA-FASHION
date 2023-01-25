@@ -2,12 +2,13 @@
 import { signOut } from 'firebase/auth'
 import { BsCart3 } from 'react-icons/bs'
 import { useDispatch } from 'react-redux'
-import { toggleCart } from '../../store/reducers/cart/cart.actions'
+import { toggleCart } from '../../store/toolkit/cart/cart.slice'
 
 import { useNavigate } from 'react-router-dom'
 import { auth } from '../../config/firebase.config'
 import { useAppSelector } from '../../hooks/redux.hooks'
-import { logoutUser } from '../../store/reducers/user/user.actions'
+
+import { logoutUser } from '../../store/toolkit/user/user.slice'
 import { HeaderContainer, HeaderItem, HeaderItems, HeaderTitle } from './styled'
 import { selectProductsCount } from '../../store/reducers/cart/cart.selectors'
 

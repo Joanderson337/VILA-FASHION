@@ -15,7 +15,7 @@ import { Header } from '../../components/Header'
 import { CustomButton } from '../../components/CustomButton'
 
 import Colors from '../../styles/theme'
-import { clearCartProducts } from '../../store/reducers/cart/cart.actions'
+import { clearCartProducts } from '../../store/toolkit/cart/cart.slice'
 import { useDispatch } from 'react-redux'
 
 export const PaymentConfirmationPage: FunctionComponent = () => {

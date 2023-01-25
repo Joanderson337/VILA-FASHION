@@ -17,7 +17,7 @@ import { Home } from '../pages/Home'
 import { Login } from '../pages/Login'
 import { PaymentConfirmationPage } from '../pages/PaymentConfirmation'
 import { SignUp } from '../pages/SignUp'
-import { loginUser, logoutUser } from '../store/reducers/user/user.actions'
+import { loginUser, logoutUser } from '../store/toolkit/user/user.slice'
 
 export function Router () {
   const [isInitializing, setIsInitializing] = useState(true)

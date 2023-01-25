@@ -14,7 +14,7 @@ import {
   CartTotal
 } from './styled'
 import { useDispatch } from 'react-redux'
-import { toggleCart } from '../../store/reducers/cart/cart.actions'
+import { toggleCart } from '../../store/toolkit/cart/cart.slice'
 import { useAppSelector } from '../../hooks/redux.hooks'
 import { selectProductsCount, selectProductsTotalPrice } from '../../store/reducers/cart/cart.selectors'
 
